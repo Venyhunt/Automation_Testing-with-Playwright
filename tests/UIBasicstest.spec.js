@@ -20,7 +20,7 @@ test("playwright test 2",async ({page})=>
  }
 );
 
-test.only("demo website tests",async ({page})=>
+test("demo website tests",async ({page})=>
 {
   await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
   await expect(page).toHaveTitle("Let's Shop");
@@ -28,6 +28,27 @@ test.only("demo website tests",async ({page})=>
   await page.locator("#userEmail").fill("vishwa.joshi@bacancy.us");
   await page.locator("[type='password']").fill("Abc@1234");
   await page.locator("#login").click();
-  console.log(await page.locator(".card-body b").nth(0).textContent());
+ // await page.waitForLoadState("networkidle");
+  await page.locator(".card-body b").last().waitFor();
+  console.log(await page.locator(".card-body b").allTextContents());
+}
+);
+
+test.only("website test 2",async ({page})=>
+{
+  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
+  await page.locator("#username").fill("rahulshettyacademy");
+  await page.locator("#password").fill("Learning@830$3mK2")
+  const dropdown=page.locator("select.form-control");
+  await dropdown.selectOption("consult");
+  await page.locator(".radiotextsty").last().click();
+  await page.locator("#okayBtn").click();
+  //await page.locator("#login").click();
+  await expect(page.locator(".radiotextsty").last()).toBeChecked();
+  await page.locator("#terms").click();
+  await expect(page.locator("#terms")).toBeChecked();
+  console.log(await page.locator("#terms").isChecked());
+
+
 }
 );

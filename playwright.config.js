@@ -9,11 +9,12 @@ export default defineConfig({
     timeout: 40*1000,
   },
   reporter: 'html',
+
   use: {
     headless: false,
     browserName: 'chromium',
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on',
+    screenshot: 'on',
   },
 
   

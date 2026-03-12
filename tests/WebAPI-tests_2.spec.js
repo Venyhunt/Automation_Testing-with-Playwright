@@ -1,17 +1,33 @@
+//login via ui ---> storage state to store in a .json file
+//inject the .json data into the other tests.
+
 const {test, expect}=require("@playwright/test");
-const { text } = require("node:stream/consumers");
+let WebContext;
 
-test("ecom website test",async ({page})=>
+
+test.beforeAll(async({browser})=>
 {
-
-  const name="ZARA COAT 3";
-  const products=await page.locator(".card-body");
+  const context= await browser.newContext();
+  const page=await context.newPage();
   await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
   await expect(page).toHaveTitle("Let's Shop");
   await page.locator("#userEmail").fill("vishwa.joshi@bacancy.us");
   await page.locator("[type='password']").fill("Abc@1234");
   await page.locator("#login").click();
-  // await page.waitForLoadState("networkidle");
+  await page.waitForLoadState("networkidle");
+  await context.storageState({path:"state.json"});      
+
+  WebContext= await browser.newContext({storageState: "state.json"});  //this will create a new context with the data from the .json file and we can use this context in our tests to avoid logging in again and again.
+
+})
+
+test("ecom website test",async ({})=>
+{
+
+  const name="ZARA COAT 3";
+  const page=await WebContext.newPage();
+ await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
+ const products=await page.locator(".card-body");
   await page.locator(".card-body b").last().waitFor();
   console.log(await page.locator(".card-body b").allTextContents());
 

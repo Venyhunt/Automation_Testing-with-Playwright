@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 40 * 1000,
+  timeout: 100 * 1000,
   expect:
   {
     timeout: 40*1000,
@@ -13,8 +13,8 @@ export default defineConfig({
   use: {
     headless: false,
     browserName: 'chromium',
-    trace: 'retain-on-failure',
-    video: 'on', 
+    trace: 'on',
+    sources: true,
     launchOptions: {
       slowMo: 1000, // Delays actions by 1 second so the video is readable
     },

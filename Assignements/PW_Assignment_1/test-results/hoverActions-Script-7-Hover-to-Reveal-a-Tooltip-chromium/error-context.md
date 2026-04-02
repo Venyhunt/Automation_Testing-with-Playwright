@@ -1,0 +1,112 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+      - img [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - img [ref=e17]
+          - text: Elements
+        - img [ref=e22]
+      - generic [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]:
+          - img [ref=e29]
+          - text: Forms
+        - img [ref=e35]
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - text: Alerts, Frame & Windows
+        - img [ref=e47]
+      - generic [ref=e49]:
+        - generic [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - text: Widgets
+          - img [ref=e60]
+        - list [ref=e63]:
+          - listitem [ref=e64] [cursor=pointer]:
+            - link "Accordian" [ref=e65]:
+              - /url: /accordian
+              - img [ref=e66]
+              - text: Accordian
+          - listitem [ref=e68] [cursor=pointer]:
+            - link "Auto Complete" [ref=e69]:
+              - /url: /auto-complete
+              - img [ref=e70]
+              - text: Auto Complete
+          - listitem [ref=e72] [cursor=pointer]:
+            - link "Date Picker" [ref=e73]:
+              - /url: /date-picker
+              - img [ref=e74]
+              - text: Date Picker
+          - listitem [ref=e76] [cursor=pointer]:
+            - link "Slider" [ref=e77]:
+              - /url: /slider
+              - img [ref=e78]
+              - text: Slider
+          - listitem [ref=e80] [cursor=pointer]:
+            - link "Progress Bar" [ref=e81]:
+              - /url: /progress-bar
+              - img [ref=e82]
+              - text: Progress Bar
+          - listitem [ref=e84] [cursor=pointer]:
+            - link "Tabs" [ref=e85]:
+              - /url: /tabs
+              - img [ref=e86]
+              - text: Tabs
+          - listitem [ref=e88] [cursor=pointer]:
+            - link "Tool Tips" [ref=e89]:
+              - /url: /tool-tips
+              - img [ref=e90]
+              - text: Tool Tips
+          - listitem [ref=e92] [cursor=pointer]:
+            - link "Menu" [ref=e93]:
+              - /url: /menu
+              - img [ref=e94]
+              - text: Menu
+          - listitem [ref=e96] [cursor=pointer]:
+            - link "Select Menu" [ref=e97]:
+              - /url: /select-menu
+              - img [ref=e98]
+              - text: Select Menu
+      - generic [ref=e102] [cursor=pointer]:
+        - generic [ref=e103]:
+          - img [ref=e105]
+          - text: Interactions
+        - img [ref=e110]
+      - generic [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]:
+          - img [ref=e117]
+          - text: Book Store Application
+        - img [ref=e122]
+    - generic [ref=e125]:
+      - heading "Tool Tips" [level=1] [ref=e126]
+      - generic [ref=e127]:
+        - paragraph [ref=e128]: Practice Tool Tips
+        - button "Hover me to see" [ref=e129] [cursor=pointer]
+      - textbox "Hover me to see" [ref=e131]
+      - generic [ref=e132]:
+        - link "Contrary" [ref=e133] [cursor=pointer]:
+          - /url: "javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')"
+        - text: to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+        - link "1.10.32" [ref=e134] [cursor=pointer]:
+          - /url: "javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')"
+        - text: and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    - iframe [ref=e143]:
+      - generic [active] [ref=f7e1]:
+        - generic [ref=f7e3]:
+          - link:
+            - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C02VQg5rLab3wOKqpk7QP2oTuiQa4wbX4hQG6o6Ws5RWN5tq_zQEQASDG-9Z5YOWCgICoDqAB0qfFqT_IAQOpAtYN44FspkY-4AIAqAMByAPJBKoEjwJP0EU3YzJmIVnisuM3PERhQcvkYjUgsmzLaSM5R9RCFUL9mTnvOebAixJAWBF2RsMqcyGcSSqSJXddiBDU7Bjd5a2e4UT9PVFuIqVsOkXEChpcA36BaBQ7GoTXXA0WsZTTDn18zL27yIDoudQyOwW7daWuH5zHpca_tmawM5U3Be4gONmr97bCQgWraj5uWFsGW6-lTwwTTwlwoy9KS5nBKvF4AUzfdCJkP9vCB41hjYVewnN3yRikhOPQDrJvc2_3zPkVCPWw0gbZJBu93O7ybsa6-Ef55D7NdcuI-IVLJRdN-Lt3OSmGq3kakfibL8Zk7LVT9Uq64Yw8loR6al9PdyHPA4HtMbqDdE3HsREawASqhKb91wXgBAGIBZSZp5ZYoAYDgAfS35WJGqgHp8yxAqgH4tixAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIILwiAYRABGJ0BMgiKgoCAgICACDoNgECAwICAgICogAKoA0i9_cE6WKej3fPvyZMD8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkysQn-sUOczu-KrIAKA5gLAcgLAaIMA5ABAaoNAklOyA0B4g0TCI_R3fPvyZMDFarUhAAdWoI7YeoNEwiild7z78mTAxWq1IQAHVqCO2HwDQKIDv___________wHYEwPQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2MTY4NTc2NTA1UAa6FwI4AaoYFwkAAAAAoI74QBIKNjE2ODU3NjUwNRgBshgFGAMiAQDQGAHCGQIIAQ&ae=1&gclid=EAIaIQobChMI_b3e8-_JkwMVqtSEAB1agjthEAEYASAAEgLTTvD_BwE&num=1&cid=CAQS5AEABaugfQhR84oEJzzv-k4RR4U-7-EGfYaEJo9ktOMb8EEL8XQ_T_iS6b8_jisNMoUtqYfsyhcnQTu_PK6gy82XO97R0oBWlkzLktoP9srfdfbzcpVu-bUDnnSJfB8uuxI9F460QVP3GjRTDN5Ei-h-Od-xD8WiOB6CoC8WkktGZzCnT8d-mcG2XenSD-xKNnPapfBfhflZGba7nDQ46z3BO1c9bgJzcMPXO8yvqO50Qh1L6k-9G5JZvVLgxZ3-P6G674nd9qmB1jxKP7capzCqpvcbxhezRtgePwfqqsMUdAyHQWEYAQ&sig=AOD64_1zNdat0lCrt5eW0Wa6BW9PY5tpPQ&client=ca-pub-4573231550355221&rf=2&nb=2&adurl=https://rbikehtahai.rbi.org.in/dpaw.html%3Fgad_source%3D5%26gad_campaignid%3D23669099668%26gclid%3DEAIaIQobChMI_b3e8-_JkwMVqtSEAB1agjthEAEYASAAEgLTTvD_BwE
+          - img [ref=f7e7] [cursor=pointer]
+          - button [ref=f7e9] [cursor=pointer]:
+            - img [ref=f7e10]
+        - iframe
+  - contentinfo [ref=e144]:
+    - generic [ref=e145]: © 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

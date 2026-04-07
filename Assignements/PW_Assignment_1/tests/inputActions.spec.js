@@ -13,7 +13,7 @@ const LoginPage = require('../pages/LoginPage');
     // Step 3: Type 'student' into the Username input box
     // Step 4: Type 'Password123' into the Password input box
     // Step 5: Click the Submit button
-    await loginPage.login('student', 'Password123');
+    await loginPage.login('student', 'Password123')
 
     // Step 6: Assert the heading 'Logged In Successfully' is visible
     await expect(loginPage.successHeading).toBeVisible();

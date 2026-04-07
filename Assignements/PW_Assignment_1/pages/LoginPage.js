@@ -14,10 +14,6 @@ class LoginPage {
     this.errorMessage = page.locator(loginPageLocators.errorMessage);
   }
 
-  async openLoginPage() {
-    await this.page.goto('https://practicetestautomation.com/practice-test-login/');
-  }
-
   async login(username, password) {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);

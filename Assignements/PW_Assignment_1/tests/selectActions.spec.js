@@ -22,6 +22,8 @@ test('Script 5: Select from a Native HTML Dropdown', async ({ page }) => {
   expect(selectedOption.trim()).toBe('Magenta');
 });
 
+
+
 test('Script 6: Select from a Custom Styled Dropdown', async ({ page }) => {
   const selectMenuPage = new SelectMenuPage(page);
 
